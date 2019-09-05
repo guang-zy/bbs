@@ -1,0 +1,5 @@
+.idea
+guang.log.txt
+*.pyc
+secret.py
+*.7z

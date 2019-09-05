@@ -1,0 +1,14 @@
+server {
+    listen 80;
+
+    location /images {
+        alias /var/www/web19/images;
+    }
+    location /static {
+        alias /var/www/web19/static;
+    }
+
+    location / {
+        proxy_pass http://localhost:3000;
+    }
+}
